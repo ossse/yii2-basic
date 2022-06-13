@@ -61,8 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        var_dump('#$#$');
-        return $this->render('view');
+        return $this->render('index');
     }
 
     /**
