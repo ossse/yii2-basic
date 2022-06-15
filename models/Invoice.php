@@ -53,10 +53,4 @@ class Invoice extends \yii\db\ActiveRecord
             'updated_by' => Yii::t('app', 'Updated By'),
         ];
     }
-
-    public function initNo()
-    {
-        $modal = Invoice::find()
-            ->        
-    }
 }
