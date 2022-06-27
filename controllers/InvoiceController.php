@@ -70,7 +70,8 @@ class InvoiceController extends Controller
         $model = new Invoice();
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
+            // var_dump($model->load($this->request->post()), $model->saveModel());die;
+            if ($model->load($this->request->post()) && $model->saveModel()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
